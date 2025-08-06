@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root, html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* App container */
+.app {
+  display: grid;
+  grid-template-rows: 10% 80% 10%; /* Navbar, Main, Footer heights */
+  height: 100vh;
+  width: 100%;
+  background: url('./images/warm-city.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar img {
+  width: 40px;
+  height: 40px;
+  margin-top:10px;
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Card */
+.card {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 2%;
+  box-shadow: 5px 5px 0 #000;
+}
+
+.heading {
+  font-family: "Sour Gummy", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Button */
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  color: black;
+  background-color: #FFF7E6;
+  border: 1px solid #E26026;
+}
+
+.button span {
+  color: #E26026;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+.button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer span {
+  font-family: "Edu AU VIC WA NT Pre", sans-serif;
+  color: #fff;
+}
+
+.footer .heart {
+  color: red;
+}
+
+/* Animations */
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Media Queries */
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .navbar img {
+    width: 50px;
+    height: 50px;
+  }
+  .main {
+    padding: 10px;
+  }
+
+  .card {
+    width: 80%;
+    height: 30%;
+    padding: 5%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    height: 40px;
+    width: fit-content;
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .navbar img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .card {
+    width: 70%;
+    height: 30%;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .button {
+    height: 45px;
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 1.4rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  .navbar img {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .card {
+    width: 60%;
+    height: 35%;
+    padding: 5px;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    height: 50px;
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 1.5rem;
+  }
+}
