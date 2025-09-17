@@ -20,7 +20,7 @@ function App() {
         });
   };
 
-  // Run fetchAdvice only once when component mounts
+  // Run fetchAdvice only once when component mounts 
   useEffect(() => {
     fetchAdvice();
   }, []);

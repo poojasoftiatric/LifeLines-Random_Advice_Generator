@@ -8,10 +8,10 @@
   box-sizing: border-box;
 }
 
-/* App container */
+/* App container */ 
 .app {
   display: grid;
-  grid-template-rows: 10% 80% 10%; /* Navbar, Main, Footer heights */
+  grid-template-rows: 10% 80% 10%; /* Navbar, Main, Footer heights */ 
   height: 100vh;
   width: 100%;
   background: url('./images/warm-city.jpg');
@@ -20,7 +20,7 @@
 }
 
 
-/* Navbar */
+/* Navbar */ 
 .navbar {
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   margin-top:10px;
 }
 
-/* Main */
+/* Main */ 
 .main {
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@
   height: 100%;
 }
 
-/* Card */
+/* Card */ 
 .card {
   background-color: whitesmoke;
   width: 40%;
@@ -62,7 +62,7 @@
   text-align: center;
 }
 
-/* Button */
+/* Button */ 
 .button {
   position: relative;
   outline: none;
@@ -96,7 +96,7 @@
   animation-delay: 0.06s;
 }
 
-/* Footer */
+/* Footer */ 
 .footer {
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@
   color: red;
 }
 
-/* Animations */
+/* Animations */ 
 @keyframes rotate {
   0%, 100% {
     transform: rotate(0deg);
@@ -147,8 +147,8 @@
   }
 }
 
-/* Media Queries */
-/* Mobile Styles */
+/* Media Queries */ 
+/* Mobile Styles */ 
 @media (max-width: 767px) {
   .navbar img {
     width: 50px;
@@ -180,7 +180,7 @@
   }
 }
 
-/* Tablet Styles */
+/* Tablet Styles */ 
 @media (min-width: 768px) and (max-width: 1199px) {
 
   .navbar img {
@@ -208,7 +208,7 @@
   }
 }
 
-/* Desktop Styles */
+/* Desktop Styles */ 
 @media (min-width: 1200px) {
   .navbar img {
     margin-top: 10px;
